@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="Description" CONTENT="有问题为什么不问问神奇的滑稽仓库呢？">
+        <title>滑稽仓库</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <p style="text-align: center; font-size: 144px; margin-top: 10px; margin-bottom: 10px;">
+            请问
+        </p>
+        <p style="text-align: center">
+            <label>
+                <select id="question" style="font-size: 48px; height: 85px;">
+                    <option>&nbsp;&nbsp;最近怎么样&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;年度工作目标&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;薛定不谔的猫&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;去哪儿玩啦&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;不真实得像一场梦&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;人生何畜不相逢&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;R.I.P.&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;学活702发生过什么&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;VOCALOID很逊&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;关于我&nbsp;&nbsp;</option>
+                </select>
+            </label>
+            &nbsp;&nbsp;
+            <button id="button" onclick="showAnswer()" style="font-size: 48px; font-weight: bold;" title="有问题为什么不问问神奇的滑稽仓库呢？">
+                &nbsp;?&nbsp;
+            </button>
+        </p>
+        <p style="text-align: center; font-size: 72px">
+            <span id="answer" style="text-align: center; color: Red; "></span>
+        </p>
+        <p style="text-align: center; font-size: 24px; color: DimGray;">
+            <span>
+                <a target="_blank" style="font-size: 32px;" title="一只无存在感傲娇小透明ʕ•ٹ•ʔ" href="https://ry.huaji.store">
+                    <strong>(✿╹◡╹) 无存在感小透明 (╹◡╹✿)</strong>
+                </a>
+            </span>
+            <br>
+            <br>
+            <span>
+                <a target="_blank" title="三年顺产，制作不易，求支持Orz" href="https://ry.huaji.store/2022/10/Sparkling">
+                    <strong>《夏日花火》现已发售！</strong>
+                </a>
+                <br>
+                <a target="_blank" title="QAQ还是感谢QDD~" href="https://store.qdd.ac">
+                    2nd floor
+                </a>
+                &nbsp;<-&nbsp;滑稽二楼
+                <br>
+                滋磁&nbsp;->&nbsp;
+                <a target="_blank" title="感谢XZY大佬的付出！" href="https://www.mina.moe">
+                    MiNa!
+                </a>
+                &nbsp;
+                <a target="_blank" title="RinChanNOW!" href="http://blog.rinchannow.site">
+                    リン屋
+                </a>
+                <br>
+                <a target="_blank" title="咕老师&&懒猫&&超厉害的大鸽Orz" href="https://sh.alynx.one">
+                    喵's StackHarbor
+                </a>
+                &nbsp;
+                <a target="_blank" title="是超级厉害的葵姐姐XD" href="https://nichijou.blueberrystudio.tokyo">
+                    Aoi的生活碎片
+                </a>
+                <br>
+                <a target="_blank" title="邓老师TQL！" href="https://cserwen.com">
+                    <del>cserwen</del>
+                </a>
+                &nbsp;
+                <a target="_blank" title="是强大的孙老师！" href="https://sqyon.cc">
+                    <del>sqyon</del>
+                </a>
+                &nbsp;
+                <a target="_blank" title="Gakki冲鸭！" href="https://leegoeth.xyz">
+                    <del>LeeのBlog</del>
+                </a>
+                <br>
+                <a target="_blank" title="祝郭老师科研之路顺利！" href="https://weifaxianzu.com">
+                    <del>未发现组</del>
+                </a>
+                &nbsp;
+                <a target="_blank" title="英雄，诗人，领路人" href="https://blog.simplenaive.cn">
+                    Yidadaa
+                </a>
+                &nbsp;
+                <a target="_blank" title="来自Github的笔友，感谢关照，前辈加油！" href="https://write.4587.fun">
+                    写写字
+                </a>
+                <br>
+                <a target="_blank" title="好欸！是葵姐姐的新网站！" href="https://blueberrystudio.tokyo">
+                    [BlueberryStudio]
+                </a>
+                &nbsp;
+                <a target="_blank" title="Yiyuan Luo" href="https://qdd.ac">
+                    qdd
+                </a>
+                <br>
+                <a target="_blank" title="AdventureX认识的超级大佬！博客超赞！" href="https://skywt.cn">
+                    SkyWT
+                </a>
+                &nbsp;
+                <a target="_blank" title="AdventureX认识的干劲满满的帅姐姐！冲冲冲！" href="https://yiwensite.com">
+                    Yiwen's blog
+                </a>
+                <br>
+                <a target="_blank" title="出碟你記得幫襯" href="https://blog.citrons.cc">
+                    <del>枸橼</del>
+                </a>
+            </span>
+            <br>
+            <br>
+            <span id="modeText" onclick="changeMode()">
+                &nbsp;
+            </span>
+            <br>
+            <span>
+                滑稽仓库&nbsp;4202&nbsp;-&nbsp;7102
+            </span>
+            <br>
+            <span>
+                <span id="busuanzi_container_site_pv">
+                    (o^-')b&nbsp;
+                    <span id="busuanzi_value_site_pv">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </span>
+                </span>
+                &nbsp;&nbsp;
+                <span id="busuanzi_container_site_uv">
+                    <span id="busuanzi_value_site_uv">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </span>
+                    &nbsp;d('-^o)
+                </span>
+            </span>
+        </p>
+
+
+        <script src="/lib/jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+        <script>
+            $(document).ready(onload());
+        </script>
+
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <script>
+            function showAnswer() {
+                const question = document.getElementById("question");
+                const answer = document.getElementById("answer");
+                switch (question.selectedIndex) {
+                    case 0: {
+                        answer.innerHTML = "别太年轻气盛<br>情绪平淡些就好";
+                        break;
+                    }
+                    case 1: {
+                        answer.innerHTML = "减肥<br>学习<br>攒钱<br>认真生活";
+                        break;
+                    }
+                    case 2: {
+                        answer.innerHTML = "<div title=\"2025.10.25\">突然吗？<br>不突然！</div>";
+                        break;
+                    }
+                    case 3: {
+                        answer.innerHTML = "<div title=\"为期两个月的全国大环线\n见了好多老朋友，认识不少新朋友\n有喜有悲，收获颇丰\n希望今后还有这样的机会四处走走\n\">杭州/北京/苏州/上海/重庆/大连</div><br><div title=\"出钱的是我，出力的是我，挨骂的还是我\n遇事生闷气不如直接发疯\n如动画一般的超绝美景\n很可惜没赶上早樱，下次一定\">东京/伊豆半岛</div><br><div title=\"魔法未来2024！\n明年再来！\">东京</div><br><div title=\"搞搞学术\n见见朋友\">上海</div><br><div title=\"乘兴而来\n败兴而归\">北京</div><br><div title=\"摸鱼划水选手竟获得黑客松冠军\n很高兴与嘉宾奇妙邂逅\n甚至还有意外收获？！\">杭州</div><br><div title=\"欢迎来到国际互联网\n感谢不杀之恩\nLove & Peace\n希望能来还愿\">澳门</div><br><div title=\"路上车好少\n广东妹妹真可爱\">广州</div>";
+                        break;
+                    }
+                    case 4: {
+                        answer.innerHTML = "<div title=\"都怪钱钟书\">“老头子恋爱听说像老房子着了火，烧起来没有救的。”<br>钱钟书《围城》</div><br><div title=\"花开堪折直须折\n莫待无花空折枝\">“唉 没机会了”<br>“¿”</div><br><div title=\"2024.7.27 04:38 - 2024.8.4 01:38\n如梦189小时\">人生如梦，大梦一场<br>梦醒了，梦碎了</div>";
+                        break;
+                    }
+                    case 5: {
+                        answer.innerHTML = "<div title=\"我司雇我在\">? - 9.5.2202</div><br><div title=\"庙小妖风大\n池浅王八多\">82.4.2202 - 02.7.1202</div>";
+                        break;
+                    }
+                    case 6: {
+                        answer.innerHTML = "<div style=\"color: DimGray;\">曾经沧海难为水<br>除却巫山不是云</div>";
+                        break;
+                    }
+                    case 7: {
+                        answer.innerHTML = "<div>ACFUN</div><br><div>→ Ag ←<br>赞美付老师和黄老师！！<br>TQL！！感谢带飞！！！</div><br><div>→ Cu ←<br>感谢郑老师和QDD！！！</div>";
+                        break;
+                    }
+                    case 8: {
+                        answer.innerHTML = "但我就是很喜欢啊（笑）";
+                        break;
+                    }
+                    case 9: {
+                        answer.innerHTML = "这一条TA咕了QAQ";
+                        break;
+                    }
+                    case 10: {
+                        answer.innerHTML = "垚 → 音同“尧”<br>一只无存在感傲娇小透明ʕ•ٹ•ʔ<br>欢迎通过 <a target=\"_blank\" title=\"更多联系方式请见 ry.huaji.store\" href=\"https://t.me/yao2333/\"><i class=\"fa fa-telegram\"></i></a> 交个朋友";
+                        break;
+                    }
+                }
+            }
+        </script>
+    </body>
+
+</html>
