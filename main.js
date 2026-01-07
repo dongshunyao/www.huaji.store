@@ -1,13 +1,13 @@
-function setMode(darkmode) {
-    document.body.classList.toggle('dark-mode', darkmode);
+function setMode(darkMode) {
+    document.body.classList.toggle('dark-mode', darkMode);
 
-    document.getElementById('question').classList.toggle('dark-mode-select', darkmode);
-    document.getElementById('question').classList.toggle('light-mode-select', !darkmode);
+    document.getElementById('question').classList.toggle('dark-mode-select', darkMode);
+    document.getElementById('question').classList.toggle('light-mode-select', !darkMode);
 
-    document.getElementById('button').classList.toggle('dark-mode-button', darkmode);
-    document.getElementById('button').classList.toggle('light-mode-button', !darkmode);
+    document.getElementById('button').classList.toggle('dark-mode-button', darkMode);
+    document.getElementById('button').classList.toggle('light-mode-button', !darkMode);
 
-    if (darkmode) {
+    if (darkMode) {
         document.getElementById('modeText').innerHTML='⊙ ω ⊙&nbsp;黑夜&nbsp;⊙ ω ⊙';
     } else {
         document.getElementById('modeText').innerHTML='✪ ω ✪&nbsp;白昼&nbsp;✪ ω ✪';
@@ -15,23 +15,22 @@ function setMode(darkmode) {
 }
 
 function changeMode() {
-    const targetDarkmode = !(localStorage.getItem('darkmode') === 'true');
-    localStorage.setItem('darkmode', targetDarkmode);
+    const targetDarkMode = !(localStorage.getItem('darkMode') === 'true');
+    localStorage.setItem('darkMode', String(targetDarkMode));
 
-    setMode(targetDarkmode);
+    setMode(targetDarkMode);
 }
 
 function changeTitle() {
     const originTitle = document.title;
-    let titleTime;
+    let titleTimeout;
     document.addEventListener('visibilitychange', function () {
-        $('[rel="shortcut icon"]').attr('href', '/favicon.ico');
         if (document.hidden) {
             document.title = 'QwQ 肿么不看了？';
-            clearTimeout(titleTime);
+            clearTimeout(titleTimeout);
         } else {
             document.title = '≧▽≦ 咦！又开始看了！';
-            titleTime = setTimeout(function () {
+            titleTimeout = setTimeout(function () {
                 document.title = originTitle;
             }, 3000);
         }
@@ -39,9 +38,9 @@ function changeTitle() {
 }
 
 function onload() {
-    const wasDarkmode = localStorage.getItem('darkmode') === 'true';
-    localStorage.setItem('darkmode', wasDarkmode);
+    const wasDarkMode = localStorage.getItem('darkMode') === 'true';
+    localStorage.setItem('darkMode', String(wasDarkMode));
 
-    setMode(wasDarkmode);
+    setMode(wasDarkMode);
     changeTitle();
 }
